@@ -16,7 +16,16 @@ const io = new Server(server, {
   },
 });
 
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      "http://localhost:5173", // for local dev
+      "https://chatappbackend-4f4o.onrender.com", // for deployed app
+    ],
+    credentials: true,
+  })
+);
+
 app.use(express.json());
 
 connectDB();
