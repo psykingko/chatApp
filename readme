@@ -1,0 +1,114 @@
+# 💬 ChatterUp
+
+A real-time, minimal, and responsive chat application built using **React**, **Vite**, **Tailwind CSS**, **Express**, **Socket.IO**, and **MongoDB**.
+
+---
+
+## 🚀 Live Demo
+
+Frontend: [https://chatterup.vercel.app](https://chatterup.vercel.app)  
+Backend API: [https://chatappbackend-4f4o.onrender.com](https://chatappbackend-4f4o.onrender.com)
+
+---
+
+## 📦 Features
+
+- 🧑‍💻 Real-time chat with WebSockets (Socket.IO)
+- 🧑‍🤝‍🧑 Join/leave notifications
+- ✍️ Typing indicators
+- 💡 Theme toggle (light/dark)
+- 🎭 Avatar generation using DiceBear
+- 🔌 MongoDB persistence (chat history)
+- ⚡ Lightweight UI using React + Tailwind CSS
+- 💬 Responsive design for mobile and desktop
+
+---
+
+## 📂 Project Structure
+
+chatterUp/
+├── backend/
+│ ├── config/
+│ │ └── db.js
+│ ├── controllers/
+│ │ └── socketController.js
+│ ├── server.js
+│ └── .env
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ ├── context/
+│ │ ├── utils/
+│ │ └── main.jsx
+│ ├── public/
+│ └── vite.config.js
+
+
+---
+
+## 🛠️ Tech Stack
+
+**Frontend**: React + Vite + Tailwind CSS  
+**Backend**: Express + Socket.IO + MongoDB  
+**Hosting**: Vercel (frontend), Render (backend)
+
+---
+
+## 🧑‍💻 Local Development
+
+### ⚙️ Backend Setup
+
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
+Install dependencies:
+
+
+npm install
+Create a .env file:
+
+
+MONGO_URI=your_mongodb_connection_string
+PORT=5000
+Run server:
+
+
+node server.js
+🖥️ Frontend Setup
+Open a new terminal, navigate to frontend:
+
+
+cd frontend
+Install dependencies:
+
+
+npm install
+Run development server:
+
+
+npm run dev
+App will open at http://localhost:5173
+
+🌐 Hosting Info
+Frontend deployed to Vercel (frontend/ as root directory)
+
+Backend deployed to Render (web service)
+
+Uses socket.connect() only on chat join, not on page load
+
+CORS configured to allow both local and hosted frontend
+
+
+🤝 Acknowledgements
+Socket.IO
+
+Vite
+
+Tailwind CSS
+
+DiceBear Avatars
+
+📝 License
+This project is for educational and personal use only.
+
+
